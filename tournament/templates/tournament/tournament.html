@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Tournaments</title>
+</head>
+<body class="bg-dark text-light">
+    <h1>Tournaments</h1>
+    <p></p>
+    <h4>Players</h4>
+    <table class="table table-dark table-striped table-bordered">
+        <thead class="thead bg-primary">
+            <tr><th scope="col">Name</th><th scope="col">Height</th><th scope="col">Team</th></tr>
+        </thead>
+        {% for player in players %}
+        <tr>
+            <td scope="row">{{ player.name }}</td>
+            <td scope="row">{{ player.height }}</td>
+            <td scope="row">{{ player.team.name }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
