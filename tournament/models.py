@@ -16,5 +16,13 @@ class Game(models.Model):
     rival_team_points = models.IntegerField()
     date = models.DateField()
 
-team_model_manager = Team.objects
-player_model_manager = Player.objects
+# team_model_manager = Team.objects
+# player_model_manager = Player.objects
+#
+# falmouth_falcons = Team.objects.create(name="Falmouth Falcons")
+# montrose_magpies = Team.objects.create(name="Montrose Magpies")
+#
+# Player.objects.create(name="Karl Broadmoor", height=180, team=falmouth_falcons)
+# Player.objects.create(name="Kevin Broadmoor", height=183, team=falmouth_falcons)
+# Player.objects.create(name="Alasdair Maddock", height=175, team=montrose_magpies)
+# Player.objects.create(name="Lennox Campbell", height=197, team=montrose_magpies)
