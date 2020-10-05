@@ -4,3 +4,4 @@ With this document **README.md** I will try to explain (and member) some command
 
 ###### Help for login
 To start working with User model run `python manage.py migrate` from the root of project.
+To create superuser from console run `python3 manage.py createsuperuser`.
